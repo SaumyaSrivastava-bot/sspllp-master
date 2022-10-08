@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRISRIPORT</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/newnav.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="css/phone.css">
+    <link re="stylesheet" type="text/css" href="css/footer.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b7063610fd.js" crossorigin="anonymous"></script>
+    <script src="/public/js/title.js"></script>
+</head>
+<body>
+    {{>navbar}}
+    <div class="container">
+        <button type="submit" class="btn" onClick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="images/flogo.png">
+            <h2>thankyou</h2>
+            <p>your details have been successfully submitted. Thanks!</p>
+            <button type="button" onClick="closePopup()">OK</button>
+        </div>
+
+    </div>
+    {{>foot1}}
+    <script>
+        let popup=document.getElementById("popup");
+        function openPopup()
+        {
+            popup.classList.add("open-popup");
+
+        }
+        function closePopup()
+        {
+            popup.classList.remove("open-popup");
+        }
+
+    </script>
+    {{!-- {{>foot1}} --}}
+</body>
+</html>

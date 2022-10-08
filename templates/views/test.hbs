@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Test</title>
+</head>
+<body>
+<h1>Testing...</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="email">email</label>
+                <input type="email" id="name" placeholder="mail" 
+                       value="" name="email" required>
+            </div>
+           
+            <div>
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" 
+                       name="avatar" value="" required>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+
+        <form action="/getimg" method="post">
+        <input type="email" name="email" placeholder="enter mail to find image">
+        <button type="submit">find</button>
+        
+        
+        </form>
+        <img src="{{image}}" alt="">
+        <br>
+        <br>
+        <img src="../../public/uploads/1665188069713money.png" alt="fixed img">
+        {{!-- <img src="../../public/uploads/1665187828363imp.png" alt="fixed img"> --}}
+        <img src="../../public/images/client.jpg" alt="fixed img">
+     
+        {{image}}
+    
+</body>
+</html>

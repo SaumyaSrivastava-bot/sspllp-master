@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+body {
+
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 47, 121, 1) 49%, rgba(0, 212, 255, 1) 100%);
+
+
+}
+
+::placeholder {
+  color: white;
+  font-family: 'Baloo 2', cursive;
+}
+
+p {
+  color: white;
+  font-family: 'Baloo 2', cursive;
+}
+
+.container {
+
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+hr {
+  width: 70%;
+}
+
+.container h1 {
+  font-size: 38px;
+  /* border-bottom: 5px solid purple; */
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Baloo 2', cursive;
+  /* font-family: 'Pattaya', sans-serif; */
+  /* padding: 13px; */
+}
+
+.box {
+  /* width: 30%; */
+  padding: 5px 5px;
+  /* background: transparent; */
+  /* border-bottom: 3px solid purple; */
+}
+
+.box input {
+  /* width: 100%; */
+  border: none;
+  outline: none;
+  /* color: white; */
+  background: none;
+  /* border-bottom: white; */
+  font-size: medium;
+  /* color: aliceblue; */
+}
+
+.btn {
+
+  width: 105px;
+  padding: 4px 0px;
+  text-align: center;
+  margin: 14px 7px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 3px solid rgb(247, 240, 247);
+  background: transparent;
+  cursor: pointer;
+  /* position: relative; */
+  color: white;
+  font-family: 'Baloo 2', cursive;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: green;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Full-width input fields */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  /* display: inline-block; */
+  /* border: none; */
+  /* background: #f1f1f1; */
+  border-bottom: 2px solid #2f35ff;
+  color: white;
+  font-size: 20px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number] {
+  /* background-color: #ddd; */
+  outline: none;
+  color: white;
+}
+
+.container {
+  padding: 10px;
+  margin-top: 30px;
+  z-index: -1;
+}
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 500px) {
+  hr {
+    width: 100%;
+  }
+
+  .container {
+    padding: 10px;
+    margin-top: 20px;
+    z-index: -1;
+  }
+
+  ::placeholder {
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    font-size: 19px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+
+}

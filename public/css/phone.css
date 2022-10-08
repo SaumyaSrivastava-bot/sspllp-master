@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#services {
+    display: flex;
+    flex-direction: column;
+}
+
+#services2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#blog {
+    display: flex;
+    flex-direction: column;
+}

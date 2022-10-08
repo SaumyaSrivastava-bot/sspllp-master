@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sell - SriSriPort</title>
+    <link rel="shortcut icon" href="images/flogo.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/sell.css" />
+    <link rel="stylesheet" type="text/css" href="css/newnav.css">
+
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b7063610fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    {{>navbar}}
+    <section class="container">
+        <img src="/images/rg1.jpg" alt="" class="image" />
+        <header>Page Coming Soon</header>
+        <p>
+            Our website is under construction. We're working hard to improve our
+            website and we'll ready to launch after.
+        </p>
+        <div class="time-content">
+            <div class="time days">
+                <span class="number"></span>
+                <span class="text">days</span>
+            </div>
+            <div class="time hours">
+                <span class="number"></span>
+                <span class="text">hours</span>
+            </div>
+            <div class="time minutes">
+                <span class="number"></span>
+                <span class="text">minutes</span>
+            </div>
+            <div class="time seconds">
+                <span class="number"></span>
+                <span class="text">seconds</span>
+            </div>
+        </div>
+
+        <div class="email-content">
+            <p>Subscribe now to get the latest updates!</p>
+
+            <div class="input-box">
+                <input type="email" placeholder="Enter your email" />
+                <button>Notify Me</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const seconds = document.querySelector(".seconds .number"),
+            minutes = document.querySelector(".minutes .number"),
+            hours = document.querySelector(".hours .number"),
+            days = document.querySelector(".days .number");
+
+        let secValue = 11,
+            minValue = 2,
+            hourValue = 2,
+            dayValue = 10;
+
+        const timeFunction = setInterval(() => {
+            secValue--;
+
+            if (secValue === 0) {
+                minValue--;
+                secValue = 60;
+            }
+            if (minValue === 0) {
+                hourValue--;
+                minValue = 60;
+            }
+            if (hourValue === 0) {
+                dayValue--;
+                hourValue = 24;
+            }
+
+            if (dayValue === 0) {
+                clearInterval(timeFunction);
+            }
+            seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
+            minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
+            hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
+            days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
+        }, 1000); //1000ms = 1s
+    </script>
+
+    <!-- JavaScript -->
+    <!--<script src="js/script.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn - SriSriPort</title>
+    <link rel="stylesheet" type="text/css" href="css/newnav.css">
+    <link rel="shortcut icon" href="images/flogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b7063610fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+    {{!--
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/phone.css"> --}}
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+</head>
+
+<body>
+
+    {{>navbar}}
+    <div class="container">
+        <h1>Log In SRISRIPORT</h1>
+        <hr>
+        <div class="box">
+            <form action="/login" method="post">
+                <i class="fa fa-envelope"></i>
+                <label for="email"><b></b></label>
+                <input type="email" placeholder="Enter your Email" name="email" required>
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+
+            <label for="psw1"><b></b></label>
+            <input type="password" placeholder="Enter Password" name="psw1" required>
+        </div>
+        {{!-- <label>
+            <input style="color:#ffffff" type="checkbox" checked="checked" name="remember"
+                style="margin-bottom:15px"><span style="color: #64ff02;"> Remember me</span>
+        </label> --}}
+
+        {{!-- <p style="color:#ffffff">By creating an account you agree to our <a href="#" style="color:#ffffff">Terms &
+                Privacy</a>.</p> --}}
+        <button type="submit" class="btn"><span></span> Sign in</button>
+
+        </form>
+
+
+    </div>
+
+    {{>foot1}}
+
+</body>
+
+</html>

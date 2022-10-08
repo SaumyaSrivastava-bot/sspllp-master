@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+.main {
+    /* position: relative;
+     top: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    z-index: -1;
+    overflow: auto;
+}
+
+h4 {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+#title {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 105px;
+
+}
+
+#howh1 {
+    margin-top: 40px;
+    text-align: center;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.card {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px auto;
+    height: 350px;
+}
+
+/* .blink {
+    animation: blink 3s infinite;
+} 
+
+@keyframes blink {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: red;
+        
+    }
+
+    51% {
+        color: blueviolet;
+      
+    }
+
+    100% {
+        color: white;
+        
+    }
+} */
+
+/* .card 
+{   position: static;
+    z-index: -2;
+}
+.main .card video{
+    position: relative;
+    z-index: -2;
+} */
+
+
+
+
+
+.right1 img {
+    width: 15px;
+    /* filter: invert(); */
+
+}
+
+.right1 {
+    font-size: 15px;
+    color: white;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    height: 338px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../images/nbg2.jpg') no-repeat center center/cover;
+    /* background: rgb(2, 0, 36); */
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 47, 121, 1) 49%, rgba(0, 212, 255, 1) 100%); */
+    height: 400px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    animation: imgs 20s linear infinite;
+}
+
+@keyframes imgs {
+    0% {
+        background-image: url(../images/nbg2.jpg);
+    }
+
+    25% {
+        background-image: url(../images/nbg5.jpg);
+
+    }
+
+    50% {
+        background-image: url(../images/nbg6.jpg);
+    }
+
+    75% {
+        background-image: url(../images/nbg3.jpg);
+    }
+
+    100% {
+        background-image: url(../images/nbg4.jpg);
+    }
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* services ----------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#services {
+    margin: -3px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#services .box {
+    /* border: 2px solid brown; */
+    padding: 20px;
+    margin: -1px 6px;
+    /* border-radius: 28px; */
+    /* background: #f2f2f2; */
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 270px;
+    height: 300px;
+}
+
+#services .box img {
+    width: 120px;
+
+    margin: auto;
+    display: block;
+}
+
+.box h2 {
+    margin-top: -20px;
+}
+
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* utility class --------------------------------------------------------->>>>>>>>>>>>>>>>>>>>> */
+
+.h-primary {
+    /* font-family: 'Bree Serif', serif; */
+    font-size: 2.5rem;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Gemunu Libre', sans-serif;
+    color: #081040;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+.buggg {
+    color: rgb(27 235 225 / 60%);
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'Bree Serif', serif;
+}
+
+.name1 {
+    text-align: center;
+    color: #f3f2eff7;
+    font-size: 1rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.name2 {
+    text-align: center;
+    color: #81dc1df7;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 5px;
+    margin-bottom: -14px;
+}
+
+
+#home span {
+    /* background-color: #f90; */
+    box-shadow: 0 0 16px rgb(0 0 0 / 20%);
+    background: #460e7fa8;
+    /* background: hsl(278deg 94% 25%); */
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.btn {
+
+    border: 3px solid #460e7fa8;
+    font-weight: bold;
+    background-color: transparent;
+    /* color: white; */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 6px 20px;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: -1;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+
+
+#regbtn:hover span {
+    width: 100%;
+}
+
+
+
+/* * Clients Section * ------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    /* background-color: rgb(17, 209, 75); */
+    background: url('img/fbfinal.jpg') no-repeat center center/cover;
+    /* background-color: #505fc8; */
+    background-image: linear-gradient(43deg, #020730 0%, #000000 36%);
+
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 44px;
+}
+
+#clients img {
+    height: 142px;
+    margin-left: 12px;
+}
+
+
+/* new modifications  card2 --------------------------------------------------------------*/
+.container {
+    padding: 5px
+}
+
+#services2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+#services2 .box2 {
+    /* border: 2px solid brown; */
+    padding: 20px;
+    margin: -1px 6px;
+    /* border-radius: 28px; */
+    /* background: #f2f2f2; */
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    height: 280px;
+}
+
+
+
+.box2 h2 {
+    margin-top: -20px;
+    color: blue;
+    font-size: 25px;
+}
+
+.box2 h3 {
+    margin-top: 3px;
+    text-align: center;
+    color: #f20d0d;
+    font-size: 30px;
+}
+
+
+#services2 .box2 p {
+    font-family: 'Bree Serif', serif;
+}
+
+#card2-container h1 {
+    text-align: center;
+    padding: 20px;
+    color: #081040;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Gemunu Libre', sans-serif;
+
+}
+
+#what {
+    /* border: 2px solid red; */
+    margin-top: 55px;
+    width: 80%;
+    margin-left: 40px;
+
+
+
+}
+
+#what p {
+    font-family: 'Gemunu Libre', sans-serif;
+    color: #081455;
+    font-size: 1.3rem;
+
+}
+
+
+
+
+/* blog--------------------------------------------------------- */
+
+#blog {
+    margin: -3px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+#blog .box3 {
+    /* border: 2px solid brown; */
+    padding: 20px;
+    margin: -1px 6px;
+    /* border-radius: 28px; */
+    /* background: #f2f2f2; */
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    /* height: 250px; */
+    flex-basis: 40%;
+}
+
+
+
+.box3 h2 {
+    margin-top: -20px;
+    color: blue;
+    font-size: 25px;
+}
+
+.box3 h3 {
+    margin-top: 3px;
+    text-align: center;
+    color: #f20d0d;
+    font-size: 30px;
+}
+
+
+#blog .box3 p {
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+
+#blogsection h1 {
+    text-align: center;
+    padding: 10px;
+    color: #181717;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* transparent---------------------------- */
+#blogsection {
+
+    background-color: aliceblue;
+    margin-top: 20px;
+
+
+}
+
+#blogsection a {
+
+    text-decoration: none;
+
+
+}
+
+
+
+.box3 {
+    position: relative;
+    /* width: 250px;
+    height: 400px; */
+    z-index: 1;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    /* border-radius: 15px; */
+    /* background: rgba(255, 255, 255, 0.1); */
+    overflow: hidden;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    /* flex-direction: column;
+    padding: 10px;
+    text-align: center; */
+}
+
+.box3 img {
+    width: 230px;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box3 h2 {
+    z-index: 1;
+    color: #040b3b;
+}
+
+.box3 p {
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+}
+
+.box3 a {
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(20, 6, 127);
+    border-radius: 5px;
+    margin: 18px auto;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+#services {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5584ff;
+    height: 150px;
+}
+
+.offer h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.formoffer input {
+    /* width: 100%; */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.formoffer input[type=submit] {
+    /* width: 100%; */
+    background-color: green;
+    color: white;
+}
+
+#card2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 20px */
+    margin-top: 50px
+}
+
+
+/* card css---------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #131313;
+} */
+
+.container {
+    position: relative;
+}
+
+.container .card {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4f1e8ab8;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+    content: 'SSP';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 25, 0.05)
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 150px;
+}
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+.container .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {
+    background: #9bdc28;
+}
+
+.container .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+    background: #9bdc28;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+    background: #03a9f4;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+    background: #e91e63;
+}
+
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: green;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+.container .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+
+}
+
+.container .card:hover .contentBx a:hover {
+    background-color: #119911;
+
+}
+
+
+#vivi {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background: #19181a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#vivi:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+#vivi1 {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background: #19181a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#vivi1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+#vivi2 {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background: #19181a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#vivi2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+#vivi3 {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    background: #19181a;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#vivi3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+/* section how to-------------------------- */
+#howto
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #count
+{
+    border: 2px solid red;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SriSriPort</title>
+    <link rel="shortcut icon" href="images/flogo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/newnav.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b7063610fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/phone.css">
+
+
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">2nd Floor, 105-M</div>
+                    <div class="text-two">Taranagari, Gorakhpur, Uttar Pradesh.</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+91 6306 834 436</div>
+                    <div class="text-two">+91 7839 358 367</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">srisriportllp@gmail.com</div>
+                    <div class="text-two">krvivi28@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any work from us or any types of quries related to import or export, you can send us a
+                    message from here. It's our pleasure to help you.</p>
+                <form action="/contactus" method="post">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name" name="name">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Enter your email" name="email">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your mobile number" name="mobile">
+                    </div>
+                    <div class="input-box message-box">
+                        <input type="text" placeholder="Write your message" name="query">
+                    </div>
+                    <button class="button" type="submit">Send Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{>foot1}}
+</body>
+
+</html>

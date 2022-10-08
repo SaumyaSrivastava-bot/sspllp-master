@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - SriSriPort</title>
+  <link rel="shortcut icon" href="images/flogo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/newnav.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/b7063610fd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/register.css">
+
+  <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/phone.css">
+  <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <style>
+    .footer-dark {
+
+      color: #f0f9ff;
+      background-color: transparent;
+      font-size: 18px;
+    }
+  </style> --}}
+</head>
+
+<body>
+  {{!-- {{>navbar}} --}}
+  
+ <form action="/profile" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="email">email</label>
+                <input type="email" id="name" placeholder="mail" 
+                       value="" name="email" required>
+            </div>
+           
+            <div>
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" 
+                       name="avatar" value="" required>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+
+        <form action="/getimg" method="post">
+        <input type="email" name="email" placeholder="enter mail to find image">
+        <button type="submit">find</button>
+        
+        
+        </form>
+        {{image}}
+
+    {{!-- {{>foot1}} --}}
+</body>
+
+</html>
